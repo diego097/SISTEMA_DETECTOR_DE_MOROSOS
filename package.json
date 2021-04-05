@@ -1,0 +1,22 @@
+{
+  "name": "sistema_detector_de_morosos",
+  "version": "1.0.0",
+  "description": "Sistema bancario uqe predice si un cliente puede o no pagar un prestamo mediante el uso de un algoritmo de Machine Learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diego097/SISTEMA_DETECTOR_DE_MOROSOS.git"
+  },
+  "author": "Diego Vega Mejia AND Jordi Valverde Chavez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diego097/SISTEMA_DETECTOR_DE_MOROSOS/issues"
+  },
+  "homepage": "https://github.com/diego097/SISTEMA_DETECTOR_DE_MOROSOS#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
