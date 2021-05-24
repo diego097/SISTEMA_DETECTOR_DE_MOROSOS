@@ -1,6 +1,21 @@
-const express = require('express')
+const express = require("express");
+const bodyParser = require("body-parser");
+const ejs = require('ejs')
+var path = require("path");
+const Router = require('./routes/index')
 const app = express();
+//const Router = require('./src/routes/index')
 
-app.listen(3000, () => {
-    console.log("server on port 3000")
-})
+//Midlewards
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+app.use(express.json())
+
+app.set('views', path.join(__dirname, 'views'))
+app.set('view engine', 'ejs')
+
+
+//app.use(Router)
+app.use(Router)
+
+module.exports = app;
